@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/movies.css">
+</head>
+<body>
+    
+    <nav class="position-fixed min-vh-100 bg-info d-flex">
+        <div class="d-flex flex-column justify-content-between">
+            <div class="rounded py-5 position-relative overflow-hidden" id="navLinks">
+                <a class="nav-link linkOne" href="#">Now playing</a>
+                <a class="nav-link linkTow" href="#">Popular</a>
+                <a class="nav-link linkThree" href="#">Top Rated</a>
+                <a class="nav-link linkFour" href="#">Trending</a>
+                <a class="nav-link linkFive" href="#">Upcoming</a>
+                <a class="nav-link link" id="inSection" href="#contactUs">Contact Us</a>
+            </div>
+            <div class="p-2">
+                <div class="icon d-flex">
+                    <i class="fa-brands fa-facebook-f p-2"></i>
+                    <i class="fa-brands fa-twitter p-2"></i>
+                    <i class="fa-solid fa-globe p-2"></i>
+                </div>
+                <p class="p-2">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        
+        <div class="icons d-flex flex-column justify-content-between align-items-center p-2">
+            <img src="images/logo.png" class="p-2" alt="">
+            <i class="hh fa-solid p-2 fa-bars fa-xl" id="iconNavOpen"></i>
+            <i class="hh d-none fa-solid p-2 fa-close fa-xl" id="iconNavClose"></i>
+            <div class="share">
+                <i class="fa-solid p-2 fa-globe d-block"></i>
+                <i class="fa-solid p-2 fa-share-alt d-block"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search container mx-auto p-5">
+    <div class="row">
+        <div class="word-input col-sm-6 px-4">
+            <input type="text" placeholder="Search word" id="searchWordInput" class="text-center form-control bg-transparent border-0 border-bottom border-3 rounded-0 text-white">
+        </div>
+        <div class="movie-input px-4 col-sm-6">
+            <input type="text" placeholder="Search name" id="searchMovieInput" class="text-center form-control bg-transparent border-0 border-bottom border-3 rounded-0 text-white">
+        </div>
+    </div>
+    </div>
+
+    <section class="movies">
+        <div class="container pb-5">
+            <div class="row justify-content-evenly" id="displayMovies">
+                
+            </div>
+        </div>
+    </section>
+
+    <div  class="contact container py-5" id="contactUs">
+    <div class="row">
+        <div class="name-input px-4 my-1 col-sm-6 ">
+            <input type="text" placeholder="Enter your name" id="userName" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Your Name is not valid</h6>
+        </div>
+        <div class="email-input px-4 my-1 col-sm-6">
+            <input type="text" placeholder="Enter email" id="userEmail" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Entre valid email</h6>
+        </div>
+        <div class="phone-input px-4 my-1 col-sm-6">
+            <input type="text" placeholder="Enter phone" id="userPhone" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Entre valid phone</h6>
+        </div>
+        <div class="age-input px-4 my-1 col-sm-6">
+            <input type="text" placeholder="Enter age" id="userAge" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Entre valid Age</h6>
+        </div>
+        <div class="password-input px-4 my-1 col-sm-6">
+            <input type="text" placeholder="Enter password" id="password" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Entre valid password *Minimum eight characters, at least one letter and one number:*</h6>
+        </div>
+        <div class="conf-passworm-input px-4 my-1 col-sm-6">
+            <input type="text" placeholder="Confirm password" id="confPassword" class="text-center form-control bg-transparent border-0 border-bottom border-3 border-danger rounded-0 text-white">
+            <h6 class="alert-danger p-3 invalid-feedback">Entre valid Repassword</h6>
+        </div>
+    </div>
+    <button type="submit" id="submit" class="btn btn-danger mt-4 mx-md-2 mx-auto d-block">Submit</button>
+</div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

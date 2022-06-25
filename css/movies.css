@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(0,0,0,0.3);
+}
+nav i {
+    cursor: pointer;
+}
+nav {
+    width: 100%;
+    max-width: 250px;
+    background: #4CA1AF;
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+    z-index: 9999;
+}
+ nav #navLinks {
+    height: fit-content;
+}
+nav #navLinks a.nav-link {
+    color: #16899b !important;
+    font-weight: 600;
+    position: relative;
+    bottom: -300px;
+}
+nav #navLinks a.nav-link:hover,
+nav #navLinks a.nav-link.activ {
+    color: #fff !important;
+}
+nav img {
+    width: 45px;
+}
+
+.movies .movie .content {
+    transition: all 1s;
+    bottom: -100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #22dde4;
+}
+.movies .movie:hover .content {
+    bottom: 0;
+}
+.search input,
+.contact input {
+    transition: all .3s;
+}
+.search input:focus,
+.contact input:focus {
+    box-shadow: -2px 2px 2px -1px rgb(0 0 0 / 70%) inset, 2px -2px 2px -2px rgb(0 0 0 / 70%)inset;
+}
